@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cómo te impactan las redes sociales</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+</head>
+<body>
+  <header>
+    <h1>Cómo te impactan las redes sociales</h1>
+    <p>Visualización de las respuestas por pregunta</p>
+  </header>
+
+  <main>
+    <section class="panel-controles">
+      <p>Pega tus datos CSV o usa los de ejemplo:</p>
+      <div class="botones">
+        <button id="btnUpdate">Actualizar</button>
+        <button id="btnReset">Cargar Ejemplo</button>
+      </div>
+      <textarea id="csvInput" placeholder="Pega aquí tus datos CSV..."></textarea>
+    </section>
+
+    <section class="grid">
+      <div class="card"><h3>Pregunta 1: ¿Para qué utilizas las redes sociales?</h3><canvas id="chart1"></canvas></div>
+      <div class="card"><h3>Pregunta 2: ¿Cuánto tiempo al día inviertes?</h3><canvas id="chart2"></canvas></div>
+      <div class="card"><h3>Pregunta 3: ¿Puedes vivir sin redes sociales?</h3><canvas id="chart3"></canvas></div>
+      <div class="card"><h3>Pregunta 4: ¿Qué contenido consumes más?</h3><canvas id="chart4"></canvas></div>
+      <div class="card"><h3>Pregunta 5: ¿Con qué frecuencia publicas?</h3><canvas id="chart5"></canvas></div>
+      <div class="card"><h3>Pregunta 6: ¿Crees que a la gente le importa lo que subes?</h3><canvas id="chart6"></canvas></div>
+      <div class="card"><h3>Pregunta 7: ¿Con qué fin subes contenido?</h3><canvas id="chart7"></canvas></div>
+      <div class="card"><h3>Pregunta 8: ¿Te sientes seguro navegando?</h3><canvas id="chart8"></canvas></div>
+      <div class="card"><h3>Pregunta 9: ¿Prefieres convivir o buscar la mejor foto?</h3><canvas id="chart9"></canvas></div>
+      <div class="card"><h3>Pregunta 10: ¿Por qué crees que basan su autoestima en redes?</h3><canvas id="chart10"></canvas></div>
+    </section>
+  </main>
+
+  <footer>
+    Proyecto desarrollado en Visual Studio Code — hecho con ❤️ y Chart.js
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
